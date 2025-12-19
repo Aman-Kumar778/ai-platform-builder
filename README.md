@@ -72,6 +72,18 @@ For this prototype:
 ---
 
 ## 📂 Project Structure
+ src/
+│── App.jsx
+│── components/
+│   ├── AdminHome.jsx
+│   ├── AdminCourseEditor.jsx
+│   ├── AdminAnalytics.jsx
+│   ├── CoursesView.jsx
+│   ├── LearningView.jsx
+│   ├── ProgressView.jsx
+│   ├── CertificateView.jsx
+│── utils/
+│   └── aiCourseEngine.js
 
 
 
