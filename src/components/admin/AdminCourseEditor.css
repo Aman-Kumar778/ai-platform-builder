@@ -1,0 +1,43 @@
+.editor-container {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  margin-top: 24px;
+}
+
+.editor-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.module-editor-card {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.module-editor-card input,
+.module-editor-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.editor-actions button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.add-module-btn {
+  margin-top: 16px;
+  padding: 12px;
+  width: 100%;
+  font-weight: bold;
+}
