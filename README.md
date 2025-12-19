@@ -1,70 +1,294 @@
-# Getting Started with Create React App
+# AI-Powered Course Builder & Learning Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Introduction
 
-## Available Scripts
+The **AI-Powered Course Builder & Learning Platform** is a modern, interactive learning system designed to solve a major limitation of traditional online courses — static content and long, passive videos.
 
-In the project directory, you can run:
+This platform allows **Admins** to generate complete, structured courses using **AI**, while **Candidates (Learners)** experience a guided, stage-wise learning flow with quizzes, assignments, progress tracking, and certification.
 
-### `npm start`
+The system follows a **two-login architecture**:
+- **Admin** → creates and manages AI-generated courses
+- **Candidate** → consumes courses, completes modules, and earns certificates
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The entire project is built using **React (frontend)** with **plain CSS**, focusing on clarity, scalability, and ease of demonstration.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Features Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔑 Admin Side
+- AI-powered course generation from a single topic
+- Auto-generated:
+  - Course structure
+  - Modules
+  - Content
+  - Quizzes (MCQs)
+  - Assignments
+- Manual editing of courses and modules
+- Reordering, adding, and removing stages
+- Progress analytics of candidates
 
-### `npm run build`
+### 🎓 Candidate Side
+- Browse available courses
+- Stage-wise learning (module by module)
+- Quiz-based evaluation (auto-graded)
+- Assignment completion gating
+- Progress tracking
+- Course completion score
+- Certificate / badge on completion
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧠 AI Usage in the Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The platform uses an **AI-driven course generation engine**.
 
-### `npm run eject`
+- Admin enters a **topic**
+- AI auto-generates:
+  - Course title & description
+  - Multiple modules
+  - Learning content
+  - Quiz questions
+  - Practical assignments
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🛠 AI Implementation Details
+For this prototype:
+- AI responses are **simulated client-side**
+- Logic is **prompt-driven and structured**
+- Output format mimics real LLM responses (GPT / Claude / Gemini)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📌 In production, the same prompt logic can be connected to real AI APIs.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🏗️ Tech Stack
 
-## Learn More
+- **Frontend:** React (Create React App)
+- **Styling:** Plain CSS (component-level CSS files)
+- **Icons:** lucide-react
+- **State Management:** React Hooks (`useState`, `useEffect`)
+- **Persistence:** Local state (can be extended to backend)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ⚙️ Setup Instructions
 
-### Making a Progressive Web App
+### 1️⃣ Prerequisites
+Make sure you have the following installed:
+- **Node.js** (v16 or later)
+- **npm** (comes with Node.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### 2️⃣ Clone the Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+git clone https://github.com/YOUR_USERNAME/ai-course-platform.git
+cd ai-platform-builder
+```
 
-### Deployment
+###3️⃣ Install Dependencies
+    npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+    Dependencies used:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    react
+
+    react-dom
+
+    lucide-react
+
+###▶️ Running the Project
+
+Start the development server:
+
+npm start
+
+
+    The application will open automatically at:
+
+http://localhost:3000
+
+##🔐 Application Flow
+Login
+
+On launch, users choose:
+
+Admin Login
+
+Candidate Login
+
+##🧩 Component Functionality Breakdown
+🔹 App.jsx
+
+Main application controller
+
+Manages:
+
+Authentication state
+
+Current view
+
+Courses
+
+Progress
+
+Assignments
+
+Certificates
+
+Handles navigation between Admin and Candidate flows
+
+🔹 AdminHome.jsx
+
+Admin dashboard
+
+AI-based course generation input
+
+Displays overall statistics
+
+Entry point for course creation
+
+🔹 AdminCourseEditor.jsx
+
+Allows admins to:
+
+Edit course title & description
+
+Add / remove modules
+
+Edit module content
+
+Reorder modules
+
+Ensures flexibility after AI generation
+
+🔹 AdminAnalytics.jsx
+
+Displays candidate progress analytics
+
+Shows:
+
+Module completion counts
+
+Progress bars per course
+
+Helps admins track learning effectiveness
+
+🔹 CoursesView.jsx
+
+Displays all available courses
+
+Shows:
+
+Course details
+
+Progress indicators
+
+Allows candidates to start learning
+
+🔹 LearningView.jsx
+
+Core learning interface
+
+Displays:
+
+Module content
+
+Quiz questions
+
+Assignment tasks
+
+Enforces:
+
+Quiz pass requirement
+
+Assignment completion
+
+Stage-wise progression
+
+🔹 ProgressView.jsx
+
+Candidate progress dashboard
+
+Shows:
+
+Courses completed
+
+Modules finished
+
+Overall progress percentage
+
+Certificate badges
+
+🔹 CertificateView.jsx
+
+Shown when a course is fully completed
+
+Displays:
+
+Course title
+
+Completion score
+
+Issue date
+
+Certification badge
+
+🔹 aiCourseEngine.js
+
+Simulated AI engine
+
+Converts a topic into:
+
+Structured course data
+
+Modules
+
+Quizzes
+
+Assignments
+
+Easily replaceable with real AI APIs
+
+🏆 Core Requirements Fulfilled
+
+✔ AI-generated course creation
+✔ Admin course builder and editor
+✔ Stage-wise learning flow
+✔ Auto-evaluated quizzes
+✔ Assignment-based progression
+✔ Candidate progress tracking
+✔ Admin analytics dashboard
+✔ Completion score and certificate
+
+📌 Future Enhancements (Optional)
+
+Real AI API integration (OpenAI / Claude)
+
+Backend with authentication
+
+Multilingual course generation
+
+Voice-based learning
+
+Downloadable certificates (PDF)
+
+Gamification (XP, levels, streaks)
+
+📄 License
+
+This project is created for educational and demonstration purposes.
+
+🙌 Author
+
+Developed by Aman Kumar
+AI-Powered Learning Platform Project
+
